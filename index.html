@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Rating Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo-container">
+            <a href="https://www.steadiwear.com" class="logo-button">
+                <span class="logo-steadi">Steadi</span><span class="logo-wear">wear.</span>
+                <span class="hover-text">Go to Steadiwear.com</span>
+            </a>
+        </div>
+        <div class="scale-menu">
+            <button>FTM Tremor Scale</button>
+            <div class="legend" id="legend1">
+                <h3>Tremor Scale</h3>
+                <ul>
+                    <li>0 = Normal</li>
+                    <li>1 = Slight (amplitude <0.5 cm). May be intermittent.</li>
+                    <li>2 = Moderate amplitude (0.5-1 cm). May be intermittent.</li>
+                    <li>3 = Marked amplitude (1-2 cm).</li>
+                    <li>4 = Severe amplitude (>2 cm).</li>
+                </ul>
+            </div>
+            <button>FTM Pouring Scale</button>
+            <div class="legend" id="legend2">
+                <h3>Pouring Scale</h3>
+                <ul>
+                    <li>0 = Normal.</li>
+                    <li>1 = More careful than a person without tremor, but no water is spilled.</li>
+                    <li>2 = Spills a small amount of water (upto 10% of total amount).</li>
+                    <li>3 = Spills a considerable amount of water (>10 - 50%).</li>
+                    <li>4 = Unable to pour without spilling most of the water.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Steadi-Three Patient Evaluation</h1>
+        <form id="surveyForm" onsubmit="handleSubmit(event)">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div id="videoContainer"></div>
+            <button type="submit" class="submit-btn">Submit Ratings</button>
+        </form>
+    </div>
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
