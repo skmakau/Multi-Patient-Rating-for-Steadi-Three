@@ -85,5 +85,8 @@ function handleSubmit(event) {
         } else {
             alert('There was an error submitting your ratings. Please try again.');
         }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting your ratings. Please try again.');
     });
 }
