@@ -62,7 +62,7 @@ function handleSubmit(event) {
     data.patientName = patients[currentPatientIndex].name;
 
     // Send data to Google Sheets
-    fetch('https://script.google.com/macros/s/AKfycbxYA4AdnYMv6DI4m6YiyzpOZdiPARrAcWwnqjbOG0zHB8onKuP-ODNG1rKbiogum7TPMg/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwVPzbW55liCtMB9e2P54uC-BJYfjhdooFZIp7WqHX4Rk6R1F_V7i9vjkN2sGoWqWsejA/exec', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
